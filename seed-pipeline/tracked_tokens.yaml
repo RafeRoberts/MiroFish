@@ -1,0 +1,128 @@
+# Tracked tokens — Mantis Money TradingView watchlist.
+# Used to canonicalise entity extraction in GraphRAG and to filter prediction
+# outputs before they reach the Mantis execution agents.
+#
+# categories: l1 | l2 | stablecoin | governance | meme | gaming | rwa | ai | defi
+# chains lists every chain where the token has meaningful liquidity.
+# Flag `verify: true` where chain/category needs human confirmation.
+
+tokens:
+  - symbol: BTC
+    name: Bitcoin
+    category: l1
+    chains: [bitcoin]
+
+  - symbol: ETH
+    name: Ether
+    category: l1
+    chains: [ethereum]
+
+  - symbol: SOL
+    name: Solana
+    category: l1
+    chains: [solana]
+
+  - symbol: AVAX
+    name: Avalanche
+    category: l1
+    chains: [avalanche]
+
+  - symbol: BNB
+    name: BNB
+    category: l1
+    chains: [bnb-chain]
+
+  - symbol: HBAR
+    name: Hedera
+    category: l1
+    chains: [hedera]
+
+  - symbol: KAS
+    name: Kaspa
+    category: l1
+    chains: [kaspa]
+
+  - symbol: TON
+    name: Toncoin
+    category: l1
+    chains: [ton]
+
+  - symbol: LUNA
+    name: Terra Luna 2.0
+    category: l1
+    chains: [terra]
+
+  - symbol: TAO
+    name: Bittensor
+    category: ai
+    chains: [bittensor]
+
+  - symbol: ARB
+    name: Arbitrum
+    category: governance
+    chains: [arbitrum, ethereum]
+
+  - symbol: POL
+    name: Polygon
+    category: governance
+    chains: [polygon, ethereum]
+
+  - symbol: CRO
+    name: Cronos
+    category: l1
+    chains: [cronos]
+
+  - symbol: OM
+    name: Mantra
+    category: rwa
+    chains: [mantra, ethereum]
+
+  - symbol: PEPE
+    name: Pepe
+    category: meme
+    chains: [ethereum]
+
+  - symbol: FLOKI
+    name: Floki
+    category: meme
+    chains: [ethereum, bnb-chain]
+
+  - symbol: TURBO
+    name: Turbo
+    category: meme
+    chains: [ethereum]
+
+  - symbol: LADYS
+    name: Milady Meme Coin
+    category: meme
+    chains: [ethereum]
+
+  - symbol: GALA
+    name: Gala
+    category: gaming
+    chains: [ethereum, gala-chain]
+
+  - symbol: MYRIA
+    name: Myria
+    category: gaming
+    chains: [ethereum]
+
+  - symbol: SIDUS
+    name: Sidus
+    category: gaming
+    chains: [ethereum]
+
+  - symbol: VVS
+    name: VVS Finance
+    category: defi
+    chains: [cronos]
+
+  - symbol: HELLO
+    name: Hello
+    category: meme
+    chains: [bnb-chain, ethereum]
+
+  - symbol: SINGLE
+    name: SingleDEX
+    category: defi
+    chains: [cronos]

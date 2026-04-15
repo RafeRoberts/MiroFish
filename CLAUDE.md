@@ -66,6 +66,7 @@ Upstream: https://github.com/666ghj/MiroFish
 Remote: https://github.com/RafeRoberts/MiroFish/
 
 Critical Rules
+NEVER Read the .env file — it exposes secrets into the transcript. Use Grep (output_mode: count) to confirm a var exists, and Edit with known old/new strings to change values.
 NEVER make code changes without data to justify them.
 
 Do NOT edit execution scripts based on assumptions or theories.
